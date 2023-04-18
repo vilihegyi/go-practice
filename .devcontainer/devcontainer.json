@@ -1,0 +1,15 @@
+{
+	"name": "Go Docker",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": {
+			"VARIANT": "golang"
+		},
+		"appPort": [
+			"8000:8000"
+		],
+		"extensions": [
+			"ms-vscode.go"
+		]
+	}
+}

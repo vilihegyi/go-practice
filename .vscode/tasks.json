@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceRoot}/",
+            },
+            "command": "mkdir -p build && cd build && go build ../*.go",
+            "group": "build",
+        },
+        {
+            "label": "Run",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceRoot}/",
+            },
+            "command": "go",
+            "args": [
+                "run",
+                "${workspaceFolder}/main.go"
+            ],
+            "group": "build",
+        }
+    ],
+}
